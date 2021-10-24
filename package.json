@@ -1,0 +1,29 @@
+{
+  "name": "tnkb",
+  "version": "0.1.0",
+  "description": "Indonesian's vehicle plate number validator and decoder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hisamafahri/tnkb.git"
+  },
+  "keywords": [
+    "validator",
+    "vehicle",
+    "indonesia",
+    "plate-number",
+    "registration-number"
+  ],
+  "author": "Hisam Fahri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hisamafahri/tnkb/issues"
+  },
+  "homepage": "https://github.com/hisamafahri/tnkb#readme",
+  "dependencies": {
+    "tnkb": "^0.1.0"
+  }
+}
