@@ -68,8 +68,9 @@ const prefix = {
     "CH": "Konsul Kehormatan",
     "RI": "Dinas Presiden, Wakil Presiden, Ketua Lembaga Tinggi Negara dan Pejabat Setingkat Menteri",
 
-    // Registration Code  for Foreign Vehicles that operates
-    // temporarily in Indonesia
+    // Registration Code for Foreign Vehicles that operates
+    // temporarily in Indonesia (Kode Registrasi untuk Angkutan
+    // yang Beroperasi Sementara di Indonesia)
     "AK": "Angkutan Antar Negara",
     "MK": "Angkutan Misi Kemanusiaan",
     "PN": "Angkutan Pertemuan Antar Negara",
