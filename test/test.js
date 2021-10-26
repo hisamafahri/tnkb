@@ -1,3 +1,3 @@
 const tnkb = require('tnkb')
 
-console.log(tnkb.isValid('AB1234'))
+console.log(tnkb.isValid('A+1'))
