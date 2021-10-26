@@ -33,13 +33,19 @@ To use this package:
 
 using ES6 module syntax:
 ```
-import tnkb from 'tnkb';
+import tnkb from "tnkb";
 ```
 
 CommonJS syntax:
 ```
 const tnkb = require("tnkb");
 ```
+
+## Validating and Decoding String
+
+*Coming very soon...*
+
+
 
 # Author
 
