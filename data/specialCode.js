@@ -138,3 +138,5 @@ const specialCode = {
     144: "Kepulauan Solomon",
     145: "International Fund for Agricultural Development (IFAD)"
 }
+
+module.exports = { prefix }

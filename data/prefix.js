@@ -61,7 +61,7 @@ const prefix = {
     "DG": "Maluku Utara",
     "PA": "Papua",
     "PB": "Papua Barat",
-    
+
     // Special Registration Code (Kode Registrasi Khusus)
     "CD": "Korps Diplomatik",
     "CC": "Korps Konsulat",
@@ -77,3 +77,5 @@ const prefix = {
     "MS": "Angkutan Pariwisata, Olahraga, dan Misi Sosial",
     "PAM": "Angkutan Pengamanan Pejabat Negara Asing"
 }
+
+module.exports = { prefix }
