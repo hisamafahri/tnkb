@@ -75,5 +75,5 @@ const prefix = {
     "MK": "Angkutan Misi Kemanusiaan",
     "PN": "Angkutan Pertemuan Antar Negara",
     "MS": "Angkutan Pariwisata, Olahraga, dan Misi Sosial",
-    "PAM": "Angkuatn Pengamanan Pejabat Negara Asing"
+    "PAM": "Angkutan Pengamanan Pejabat Negara Asing"
 }
