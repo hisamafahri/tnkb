@@ -139,4 +139,4 @@ const specialCode = {
     145: "International Fund for Agricultural Development (IFAD)"
 }
 
-module.exports = { prefix }
+module.exports = { specialCode }
