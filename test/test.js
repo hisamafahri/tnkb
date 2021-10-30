@@ -1,3 +1,3 @@
 const tnkb = require('tnkb')
 
-console.log(tnkb.isValid('BX1SS12'))
+console.log(tnkb.isValid('be144'))
