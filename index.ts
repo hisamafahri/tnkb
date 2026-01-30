@@ -435,17 +435,37 @@ export function parse(value: string): ParseResult {
       };
     }
 
-    // Determine vehicle type based on suffix pattern (Pasal 6 ayat 6)
+    // Determine vehicle type based on number range (registration regulation)
     let vehicleType: string | null = null;
+    const num = parseInt(vehicleNumber);
 
-    if (!suffix) {
-      vehicleType = "Kendaraan Lainnya";
-    } else if (suffix.length === 1) {
-      vehicleType = "Sepeda Motor";
-    } else if (suffix.length === 2) {
-      vehicleType = "Mobil/Truk";
-    } else if (suffix.length === 3) {
-      vehicleType = "Mobil/Truk/Bus";
+    // Check if this is Polda Metro Jaya (DKI Jakarta - code "B")
+    if (regionCode === "B") {
+      // Special allocation for Polda Metro Jaya
+      if (num >= 1 && num <= 2999) {
+        vehicleType = "Mobil Penumpang";
+      } else if (num >= 3000 && num <= 6999) {
+        vehicleType = "Sepeda Motor";
+      } else if (num >= 7000 && num <= 7999) {
+        vehicleType = "Mobil Bus";
+      } else if (num >= 8000 && num <= 8999) {
+        vehicleType = "Mobil Penumpang";
+      } else if (num >= 9000 && num <= 9999) {
+        vehicleType = "Mobil Barang dan Kendaraan Khusus";
+      }
+    } else {
+      // General allocation for other regions
+      if (num >= 1 && num <= 1999) {
+        vehicleType = "Mobil Penumpang";
+      } else if (num >= 2000 && num <= 6999) {
+        vehicleType = "Sepeda Motor";
+      } else if (num >= 7000 && num <= 7999) {
+        vehicleType = "Mobil Bus";
+      } else if (num >= 8000 && num <= 8999) {
+        vehicleType = "Mobil Barang";
+      } else if (num >= 9000 && num <= 9999) {
+        vehicleType = "Kendaraan Khusus";
+      }
     }
 
     return {
