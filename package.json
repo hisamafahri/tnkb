@@ -1,7 +1,7 @@
 {
   "name": "tnkb",
-  "version": "1.0.8",
-  "description": "test",
+  "version": "1.0.9",
+  "description": "Indonesian's vehicle plate number validator and decoder (Parser nomor tanda kendaraan bermotor/tnkb Indonesia)",
   "main": "index.js",
   "type": "module",
   "scripts": {
