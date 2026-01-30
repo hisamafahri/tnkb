@@ -30,7 +30,15 @@ jobs:
       - name: Build
         run: npm run build
       
+      - name: Load secrets from 1Password
+        uses: 1password/load-secrets-action@v2
+        with:
+          export-env: true
+        env:
+          OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
+          NPM_OTP: "op://CI_Connected/NPM/Security/otp"
+      
       - name: Publish
-        run: npm publish --provenance --access public
+        run: npm publish --provenance --access public --otp=$NPM_OTP
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
